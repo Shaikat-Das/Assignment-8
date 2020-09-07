@@ -13,7 +13,7 @@ const PostDetail = () => {
     // const [photo, setPhoto]= setState([]);
     useEffect(() => {
 
-                const url = `http://jsonplaceholder.typicode.com/comments/${id}`; 
+                const url = `https://jsonplaceholder.typicode.com/comments/${id}`; 
                 fetch(url)
                 .then(res=> res.json())
                 .then(data=> setComment(data));
